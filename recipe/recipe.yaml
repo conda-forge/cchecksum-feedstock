@@ -11,7 +11,7 @@ source:
 
 build:
   script: ${{ PYTHON }} -m pip install . --ignore-installed --no-cache-dir --no-deps -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -32,7 +32,7 @@ requirements:
 tests:
   - python:
       imports:
-      - cchecksum
+        - cchecksum
       pip_check: true
 
   - script:
