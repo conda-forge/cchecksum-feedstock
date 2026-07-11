@@ -1,5 +1,5 @@
 context:
-  version: "0.4.4"
+  version: "0.4.5"
 
 package:
   name: cchecksum
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cchecksum/cchecksum-${{ version }}.tar.gz
-  sha256: 95ccb671cba310b29e3d23a9d90f9dfcf064b40923610b6045af5649f0e4c04a
+  sha256: 208df2ef2ed46e812e102b4a30b3bd1d3259729b01ea365a0712428564ec360b
 
 build:
   script: ${{ PYTHON }} -m pip install . --ignore-installed --no-cache-dir --no-deps -vv
